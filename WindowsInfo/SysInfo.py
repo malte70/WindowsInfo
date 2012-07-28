@@ -29,7 +29,12 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # 
 
-import sys, ctypes, os, platform, _winreg
+import sys
+if not sys.platform.startswith("win"):
+	print u"This is WindowsInfo. Note the “Windows” at the beginning."
+	print u"It does not run under other platforms."
+	sys.exit(1)
+import ctypes, os, platform, _winreg
 GetTickCount = ctypes.windll.kernel32.GetTickCount
 winreg = _winreg
 
@@ -48,7 +53,10 @@ except AttributeError:
 def GetRegistryValue(structure=winreg.HKEY_LOCAL_MACHINE, key=None, value=None):
 	""" get a value from the registry. This makes handling the Registry read-only much easier. """
 	RegistryKey = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, key)
-	return winreg.QueryValueEx(RegistryKey, value)[0]
+	try:
+		return winreg.QueryValueEx(RegistryKey, value)[0]
+	except WindowsError:
+		return ""
 	
 def DecodeDigitalProductID(ProductID):
 	"""

@@ -56,16 +56,15 @@ WindowsInfo_CLI_exe = Executable(
 		)
 
 setup(
-        name = "Windows Info",
-        version = "0.2",
-        description = "Windows Info",
-        author = "Malte Bublitz",
+        name         = "Windows Info",
+        version      = "0.2.1",
+        description  = "Display some information about your Windows system",
+        author       = "Malte Bublitz",
         author_email = "me@malte-bublitz.de",
-        maintainer = "Malte Bublitz",
-        maintainer_email = "me@malte-bublitz.de",
-        url = "https://malte-bublitz.de/WindowsInfo.html",
-        license = "FreeBSD",
-        executables = [WindowsInfo_exe,WindowsInfo_CLI_exe]
+        url          = "http://windowsinfo.malte-bublitz.de",
+		  download_url = "http://windowsinfo.malte-bublitz.de/download/",
+		  license      = "License :: OSI Approved :: BSD License",
+        executables  = [WindowsInfo_exe,WindowsInfo_CLI_exe]
         )
 
 # classic distutils script

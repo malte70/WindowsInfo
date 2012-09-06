@@ -30,10 +30,6 @@
 # 
 
 import sys
-if not sys.platform.startswith("win"):
-	print u"This is WindowsInfo. Note the “Windows” at the beginning."
-	print u"It does not run under other platforms."
-	sys.exit(1)
 import ctypes, os, platform, _winreg
 GetTickCount = ctypes.windll.kernel32.GetTickCount
 winreg = _winreg

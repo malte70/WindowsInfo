@@ -1,4 +1,4 @@
-#!pythonw.exe
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 #
 # file: /WindowsInfo.pyw
@@ -33,6 +33,10 @@
 import WindowsInfo
 import WindowsInfo.cli
 import sys
+if not sys.platform.startswith("win"):
+	print u"This is WindowsInfo. Note the “Windows” at the beginning."
+	print u"It does not run under other platforms."
+	sys.exit(1)
 
 def main():
 	app = WindowsInfo.cli.CLIApp(sys.argv)

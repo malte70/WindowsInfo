@@ -42,40 +42,17 @@ WindowsInfo_exe = Executable(
     copyDependentFiles = True,
     appendScriptToExe = False,
     appendScriptToLibrary = False,
-    icon = "ressources\WinInfo.ico"
+    icon = "WindowsInfo.ico"
     )
-# command line executable
-WindowsInfo_CLI_exe = Executable(
-		script = "WindowsInfo.CLI.py",
-		targetName = "WindowsInfo.CLI.exe",
-		base = "Console",
-		compress = True,
-		copyDependentFiles = True,
-		appendScriptToExe = True,
-		appendScriptToLibrary = False
-		)
 
 setup(
         name         = "Windows Info",
-        version      = "0.2.1",
-        description  = "Display some information about your Windows system",
+        version      = "0.3",
+        description  = "Show information like the CD key or the owner of a Windows operating system copy.",
         author       = "Malte Bublitz",
         author_email = "me@malte-bublitz.de",
         url          = "http://windowsinfo.malte-bublitz.de",
 		  download_url = "http://windowsinfo.malte-bublitz.de/download/",
 		  license      = "License :: OSI Approved :: BSD License",
-        executables  = [WindowsInfo_exe,WindowsInfo_CLI_exe]
+        executables  = [WindowsInfo_exe]
         )
-
-# classic distutils script
-#from distutils.core import setup
-#setup(
-#	name = "Windows Info",
-#	version = "0.2",
-#	description = "Show information like the CD key or the owner of a Windows operating system copy.",
-#	author = "Malte Bublitz",
-#	author_email = "me@malte-bublitz.de",
-#	url = "https://malte-bublitz.de/WindowsInfo/",
-#	packages = ["WindowsInfo"],
-#	scripts = ["WindowsInfo.pyw", "WindowsInfo.CLI.py"],
-#	)

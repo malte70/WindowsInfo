@@ -14,13 +14,15 @@ System Requirements
 Installation
 ------------
 
-You do not need to install WindowsInfo, just run the executable.
-If you still want to install WindowsInfo, just ask me, I can
-write you a setup program like in version 0.2.1 or earlier.
+You do not need to install WindowsInfo, just run the executable. The
+executable of the compiled/freezed version is simply called
+`WindowsInfo.exe`; and `WindowsInfo.pyw` in the source.
+Note: On a x64 Windows installation, only the x64 version of
+WindowsInfo will run!
 
 Links
 -----
 
-* Website: http://windowsinfo.malte-bublitz.de/
-* github:  https://github.com/malte70/WindowsInfo
+* [View licence](COPYING.html)
+* [github.com/malte70/WindowsInfo](https://github.com/malte70/WindowsInfo)
 

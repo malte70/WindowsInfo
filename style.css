@@ -1,0 +1,111 @@
+/**
+ * Stylesheet for the temporary WindowsInfo
+ * website
+ */
+@charset "UTF-8";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	font: 16px "Source Sans Pro", serif;
+	background: rgb(55,110,165);
+	color: #d4d4d4;
+}
+
+header {
+	margin: 0;
+	padding: 1em .5em 1.5em;
+	text-align: center;
+}
+
+header #logo {
+	display: block;
+	margin: 0 auto 1em;
+	padding: 0;
+	width: 50px;
+}
+
+header h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.6em;
+	font-weight: 600;
+}
+
+aside {
+	margin: 0;
+	padding: 0 .5em 1em;
+	text-align: center;
+}
+
+aside ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+aside ul li {
+	display: inline-block;
+	margin: 0 1em;
+	padding: 0;
+}
+
+aside ul li a:link,
+aside ul li a:visited {
+	color: #d4d4d4;
+	/*text-decoration: none;*/
+}
+
+aside ul li a:hover,
+aside ul li a:active {
+	text-decoration: underline;
+	color: rgb(111,160,210);
+}
+
+main {
+	width: 40em;
+	max-width: 100%;
+	margin: 0 auto 1em;
+	padding: .5em;
+	text-align: justify;
+}
+
+main a:link, main a:visited {
+	color: #d4d4d4;
+	text-decoration: underline;
+}
+
+main a:hover, main a:active {
+	font-style: italic;
+	text-decoration: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+footer {
+	margin: 0 0 1em;
+	padding: .5em;
+	text-align: center;
+	font-size: 12px;
+}
+
+footer p {
+	margin: 0 0 .8em;
+	padding: 0;
+}
+
+footer p a:link,
+footer p a:visited {
+	color: #d4d4d4;
+	text-decoration: none;
+}
+
+footer p a:hover,
+footer p a:active {
+	text-decoration: underline;
+}
+

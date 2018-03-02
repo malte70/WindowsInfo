@@ -82,6 +82,26 @@ main a:hover, main a:active {
 	text-decoration: none;
 }
 
+main figure.screenshot {
+	width: 430px;
+	margin: 0 auto 1em;
+}
+
+main figure.screenshot figcaption {
+	text-align: center;
+}
+
+main figure.screenshot a:link,
+main figure.screenshot a:visited {
+	text-decoration: none;
+}
+
+main figure.screenshot a:hover,
+main figure.screenshot a:active {
+	font-style: normal;
+	text-decoration: underline;
+}
+
 img {
 	max-width: 100%;
 }

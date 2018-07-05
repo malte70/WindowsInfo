@@ -84,6 +84,7 @@ main a:hover, main a:active {
 
 main figure.screenshot {
 	width: 430px;
+	max-width: 100%;
 	margin: 0 auto 1em;
 }
 
